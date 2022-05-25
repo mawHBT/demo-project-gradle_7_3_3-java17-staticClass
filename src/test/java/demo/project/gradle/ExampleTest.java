@@ -8,7 +8,7 @@ public class ExampleTest {
    @Test
    public void test() {
       ClazzWithStaticClazz.StaticClazz staticClazz = ClazzWithStaticClazz.returnStaticClazz();
-      Assertions.assertEquals(5, staticClazz.x);
+      Assertions.assertEquals(false, staticClazz.staticInterfaceMethod(true));
    }
 
 }
