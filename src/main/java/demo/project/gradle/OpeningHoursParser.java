@@ -28,6 +28,14 @@ public class OpeningHoursParser {
    }
 
    public static OpeningHours parseOpenedHours(String format) {
+
+      try {
+         System.out.println("Sleeping!");
+         Thread.sleep(25);
+      } catch (InterruptedException e) {
+         throw new RuntimeException(e);
+      }
+
       OpeningHours rs = new OpeningHours();
       return rs;
    }
