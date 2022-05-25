@@ -20,6 +20,12 @@ public class ClazzWithStaticClazz {
    }
 
    public static StaticClazz returnStaticClazz() {
+      try {
+         System.out.println("Sleeping!");
+         Thread.sleep(25);
+      } catch (InterruptedException e) {
+         throw new RuntimeException(e);
+      }
       return new StaticClazz();
    }
 
